@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.main {
+    background: #1c3a96;
+    position: relative;
+    font-family: PT Sans;
+    font-weight: 700;
+    color: #fff;
+    height: 1080px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bg_1 {
+    margin-bottom: 230px;
+}
+
+.bg_2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bg_3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card_log {
+    width: 354px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -177px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.username, .password {
+    width: 352px;
+    height: 45px;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.username, .username_reg, .email_reg, .password_reg {
+    margin-bottom: 22px;
+}
+
+.username img, .password img, .username_reg img, .password_reg img, .email_reg img, .re_password img {
+    margin: 4px 7px 4px 11px;
+}
+
+.username input, .password input, .username_reg input, .password_reg input, .email_reg input, .re_password input {
+    color: #A5A5A5;
+    background: transparent;
+    border: none;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.forgot_pswd {
+    font-size: 10px;
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.forgot_pswd a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 10px;
+}
+
+.button {
+    width: 352px;
+    height: 45px;
+    border-radius: 15px;
+}
+
+.login .button, .register .button {
+    border: 2px solid #36981D;
+    background: transparent;
+    color: #36981D;
+    font-family: PT Sans;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.login .button:active {
+    background: #287015;
+    color: white;
+}
+
+.register .button:active {
+    background: #287015;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.not_member, .have_acc {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.not_member p, .have_acc p {
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.not_member a, .have_acc a {
+    text-decoration: none;
+    color: #18A6C6;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.card_reg {
+    width: 384px;
+    height: 457px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -228.5px;
+    margin-left: -192px;
+}
+
+.username_reg, .password_reg, .email_reg, .re_password {
+    width: 384px;
+    height: 45px;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.register .button {
+    width: 384px;
+}
